@@ -598,6 +598,7 @@
 						NSInteger number = [target integerValue]; // Number
 
 						[self showDocumentPage:number]; // Show the page
+                        
 					}
 				}
 			}
@@ -843,6 +844,16 @@
 	}
 
 #endif // end of READER_BOOKMARKS Option
+}
+
+// Label touch method added    CHANGE
+- (void)tappedInToolbar:(ReaderMainToolbar *)toolbar nameLabel:(UILabel *)label
+{
+    if (printInteraction != nil) [printInteraction dismissAnimated:YES];
+    
+    //display Filename change interface
+    [delegate showRenameView:self nameLabel:label document:document];
+    
 }
 
 #pragma mark - MFMailComposeViewControllerDelegate methods

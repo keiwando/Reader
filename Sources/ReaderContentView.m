@@ -48,6 +48,8 @@
 	CGFloat tempMaximumZoom;
 
 	BOOL zoomBounced;
+    
+    UIImage *pageImage;     // CHANGED
 }
 
 #pragma mark - Constants
