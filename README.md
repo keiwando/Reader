@@ -1,4 +1,8 @@
 
+### The following Reader has been slightly customized for use in the "Sheets" app (https://github.com/keiwando/sheets)
+
+
+Original description: 
 ## PDF Reader Core for iOS
 
 ### Introduction
